@@ -1,13 +1,11 @@
-FROM debian:stretch
+FROM 2char/ubuntu:trusty
 
-RUN set -ex && \
-    apt-get update && \
-    apt-get install -y --no-install-recommends stuntman-server && \
+RUN apt-get install -y --no-install-recommends stuntman-server && \
     apt-get install -y --no-install-recommends stuntman-client && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/*
 
-EXPOSE 3478/tcp 3478/udp
+EXPOSE 3478
 
 USER nobody
 
