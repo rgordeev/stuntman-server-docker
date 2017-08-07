@@ -1,4 +1,4 @@
-FROM 2char/ubuntu:trusty
+FROM 2chat/ubuntu:trusty
 
 RUN apt-get install -y --no-install-recommends stuntman-server && \
     apt-get install -y --no-install-recommends stuntman-client && \
