@@ -1,4 +1,4 @@
-FROM 2chat/ubuntu:trusty
+FROM 2chat/ubuntu:xenial
 
 RUN apt-get install -y --no-install-recommends stuntman-server && \
     apt-get install -y --no-install-recommends stuntman-client && \
