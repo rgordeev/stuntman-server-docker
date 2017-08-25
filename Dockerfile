@@ -5,8 +5,7 @@ RUN apt-get install -y --no-install-recommends stuntman-server && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/*
 
-EXPOSE 3478
-
-USER nobody
+EXPOSE 3478/tcp
+EXPOSE 3478/udp
 
 ENTRYPOINT ["/usr/sbin/stunserver"]
